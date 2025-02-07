@@ -1,0 +1,98 @@
+/* Card Style */
+.card {
+  width: 385px;
+  height: 194px;
+  background: var(--card-background);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  overflow: hidden;
+}
+
+hr {
+  margin: 6px;
+}
+
+p {
+  margin-bottom: 3px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+.anime-image {
+  overflow: hidden;
+  position: relative;
+  min-width: 131px;
+}
+
+img {
+  height: 192px;
+  min-width: 131px;
+  border-top-left-radius: 8px;
+}
+
+.status-box {
+  display: flex;
+  align-items: end;
+  top: 15px;
+  left: 45px;
+}
+
+.status-icon {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 0px 20px;
+  background-color: #dcfce7;
+  color: #1c6337;
+  font-weight: 600;
+  width: max-content;
+  rotate: z 45deg;
+  width: 120px;
+}
+
+.finished {
+  background-color: #dcfce7;
+  color: #1c6337;
+}
+
+.onGoing {
+  background-color: #e0f2fe;
+  color: #0b4f6c;
+}
+
+.genre-icon {
+  width: max-content;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 2px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  background-color: #f3f4f6 !important;
+  color: black !important;
+}
+
+.anime-info {
+  width: 100%;
+  padding: 16px;
+}
+
+.anime-info p {
+  font-size: 13px;
+}
+
+.info-button {
+  width: max-content;
+  padding: 1px 15px;
+  align-self: flex-end;
+  border: 2px solid black;
+}
+button {
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #f3f4f6;
+  margin-right: 5px;
+  padding: 5px;
+  border-radius: 100%;
+}
