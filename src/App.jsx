@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router";
 import Home from "./components/Home";
 import About from "./components/About";
 import Anime from "./components/Anime";
+
 function App() {
   return (
     <BrowserRouter>

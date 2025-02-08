@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./style.css";
 import { Link } from "react-router-dom";
-import { Heart, Eye, EyeOff } from "lucide-react";
+import { Heart, Eye } from "lucide-react";
 
 export default function Card({ animeList }) {
   return (
@@ -11,7 +11,7 @@ export default function Card({ animeList }) {
           to={`/detail/${anime.mal_id}`}
           state={{ anime }}
           key={anime.mal_id}
-          className="card col-3 d-flex flex-row p-0"
+          className="card col-12 d-flex flex-row p-0"
         >
           <div className="anime-image">
             <img className="" src={anime.images.jpg.large_image_url} alt="" />
@@ -45,22 +45,14 @@ export default function Card({ animeList }) {
                 Duration: <strong>{anime.duration.split(" ", 2)}</strong>
               </p>
             </div>
-            <div className="call-to-action">
-              {/* Cuore vuoto*/}
-              <button>
-                <Heart />
-              </button>
-              {/* Cuore pieno */}
-              <button>
-                <Heart fill="red" color="red" />
-              </button>
+            <div className="call-to-action d-flex justify-content-end mt-1">
               {/* Occhio aperto */}
               <button>
                 <Eye />
               </button>
-              {/* Occhio Chiuso */}
+              {/* Cuore vuoto*/}
               <button>
-                <EyeOff />
+                <Heart />
               </button>
             </div>
           </div>
@@ -68,4 +60,20 @@ export default function Card({ animeList }) {
       ))}
     </>
   );
+}
+{
+  /* Cuore pieno */
+}
+{
+  /* <button>
+                <Heart fill="red" color="red" />
+              </button> */
+}
+{
+  /* Occhio Chiuso  */
+}
+{
+  /* <button>
+                <EyeOff />
+              </button> */
 }

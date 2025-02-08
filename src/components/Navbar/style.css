@@ -1,40 +1,106 @@
-/* Navbar */
-.navbar {
-  background: var(--primary-color);
-  color: white;
-  padding: 15px 20px;
+.navbarH {
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.navbarH-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navbar a {
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+.logo-accent {
+  color: #3b82f6;
+}
+
+.navbarH-controls {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.search-container {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.search-input {
+  width: 16rem;
+  padding: 0.5rem 1rem;
+  padding-right: 2.5rem;
+  border-radius: 9999px;
+  background-color: #f3f4f6;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.search-container.focused .search-input {
+  width: 24rem;
+  background-color: white;
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+.search-icon {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  color: #9ca3af;
+}
+
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-button {
+  color: #4b5563;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: color 0.2s ease;
+}
+
+.nav-button:hover {
+  color: #3b82f6;
+}
+
+.nav-divider {
+  width: 1px;
+  height: 2rem;
+  background-color: #e5e7eb;
+}
+
+.user-avatar {
+  width: 2rem;
+  height: 2rem;
+  background-color: #3b82f6;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
-  font-weight: 600;
+  cursor: pointer;
 }
-
-/* List Style */
-.list {
-  list-style: none;
-  padding: 0;
+button {
+  box-shadow: none !important;
 }
-
-.list li {
-  padding: 10px;
-  border-bottom: 1px solid var(--border-color);
-}
-
-.list li:last-child {
-  border-bottom: none;
-}
-
-/* Links */
-a {
-  color: var(--primary-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: var(--hover-color);
+h1 {
+  margin: 0;
 }

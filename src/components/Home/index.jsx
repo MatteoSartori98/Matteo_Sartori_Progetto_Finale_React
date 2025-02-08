@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
 import "./style.css";
+import Hero from "../Hero";
 import Card from "../Card";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const [animeList, setAnimeList] = useState([]);
@@ -12,12 +13,14 @@ export default function Home() {
     }
     fetchAnimes();
   }, []);
-
   return (
-    <div className="container">
-      <div className="row justify-content-center gap-2">
-        <Card animeList={animeList} />
+    <>
+      <Hero />
+      <div className="container">
+        <div className="row gap-2">
+          <Card animeList={animeList} />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
